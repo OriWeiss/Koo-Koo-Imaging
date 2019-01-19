@@ -1,6 +1,5 @@
 from tools import *
 from sys import exit
-import time
 
 
 if(int(getBuildNumber())< 15063): #checks to be sure creators update is installed
@@ -25,7 +24,7 @@ usbIndex = getDiskpartDiskIndex("Removable Media")
 cmd = 'select disk ' + usbIndex +r"""
 
 clean
-create partition primary size=400
+create partition primary size=600
 format fs=fat32 quick  label="WINPE"
 active
 assign

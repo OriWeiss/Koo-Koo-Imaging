@@ -1,8 +1,3 @@
-PLEASE NOTE THAT AS OF 10/30/2018 ONLY PORTIONS OF THIS PROJECT ARE COMPLETED.
-THE PROJECT WILL BE COMPLETED BY LATE JANUARY 2019 IF ANYONE IS INTERESTED IN WORKING ON THIS CODE PLEASE READ
-DEVELOPERS SECTION
-
-
 Welcome to KooKoo Imaging, your personal easy to use Windows imaging and restore tool.
 
 
@@ -11,10 +6,18 @@ Requirements:   1. A USB stick greater than or equal to 10 GB.
 
 
 Instructions:
-    Step 1. Run and follow all instructions in KooKoo_Create.py
-    Step 2. Open bios and boot to USB device
-    Step 3. WILL BE COMPLETED LATE JANUARY 2019
+    Step 1. Download KooKoo folder from https://drive.google.com/file/d/19SiByyWmaDnlMqICGN4A7LgMVzVfCB98/view?usp=sharing
+    Step 2. Run and follow all instructions in KooKoo_Create.py
+    Step 3. Open bios and boot to USB device (Particluarly the WinPE partition)
+    Step 4. Type diskpart and press enter
+    Step 5. Find and note the drive letter of the WinPe partition
+    step 6. Type exit and press enter.
+    Step 7. Run the KooKoo Imaging program by doing the following:
+	I. type "Your Driv Letter":\Python37-amd64\python.exe "Your Driv Letter":\KooKoo\KooKoo.py
+		For example if your WinPe drive was labeled 'F' your command would be
+		F:\Python37-amd64\python.exe F:\KooKoo\KooKoo.py
 
+	Note: All Images backed up will be placed onto the "Images" partition of the USB Drive
 
 Files
     This tool is broken down into three files, tools.py, KooKoo.py, and KooKoo_Create.py
@@ -34,15 +37,12 @@ Files
         Purpose: This is the main program that will run in windows pre installation environment. It will be able
             to backup and restore a chosen image. Since python files can not be run on windows pre installation
             environment a tool will be used to convert to an executable
-    Media directory
-        Note: NOT completed.
-        Purpose: To launch WinPe through bios
+    KooKoo_Files directory
+        Note: The WMI Package is installed to WinPE
+	Note:Python 64 bit and the WMI package are installed
+	Purpose: To launch WinPe through bios which allows the launch of KooKoo Imaging though Python 3.7amd64
+	
 
 
 Legal
     No business or corporation shall be able to use or modify this code/program.
-
-DEVELOPERS
-    If you are interested in working and completing this code please email me at oriweiss212@gmail.com I will gladly
-    help guide you through my ideas for how to complete KooKoo.py and run it in WinPe. I am currently taking a break
-    on this project as school is keeping me busy.
