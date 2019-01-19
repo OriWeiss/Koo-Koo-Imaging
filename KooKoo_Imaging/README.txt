@@ -13,7 +13,7 @@ Instructions:
     Step 5. Find and note the drive letter of the WinPe partition
     step 6. Type exit and press enter.
     Step 7. Run the KooKoo Imaging program by doing the following:
-	I. type "Your Driv Letter":\Python37-amd64\python.exe "Your Driv Letter":\KooKoo\KooKoo.py
+	I. type "Your Drive Letter":\Python37-amd64\python.exe "Your Drive Letter":\KooKoo\KooKoo.py
 		For example if your WinPe drive was labeled 'F' your command would be
 		F:\Python37-amd64\python.exe F:\KooKoo\KooKoo.py
 
